@@ -1,0 +1,108 @@
+.conatiner {
+  background: #fbfbfb;
+  border-top: 1px solid #dadee2;
+}
+.actions {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  margin: 0 22px;
+  border-bottom: 1px solid #eeeeee;
+}
+.actions div {
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #0052cc;
+  cursor: pointer;
+}
+.dropdown {
+  transform: rotateZ(-90deg);
+  margin-left: 4px;
+}
+.whatsAppUpdate {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 0;
+  margin: 0 31px;
+  border-bottom: 1px solid #eeeeee;
+  color: #525f75;
+}
+.individual {
+  padding: 5px 32px 18px 32px;
+  color: #525f75;
+}
+.individualStatus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 13px 0;
+}
+.individualStatus div {
+  display: flex;
+  align-items: center;
+}
+.avatar {
+  color: white;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #00848b;
+  margin-right: 13px;
+}
+.individualStatus:nth-child(2) .avatar {
+  background: #9747ff;
+}
+.individualStatus div:nth-child(1) span:nth-child(2) {
+  width: 83px;
+}
+.individualStatus div:nth-child(2) {
+  width: 45px;
+}
+.individualStatus div:nth-child(3) {
+  width: 204px;
+}
+.individualStatus div:nth-child(5) {
+  width: 88px;
+}
+@media screen and (max-width: 768px) {
+  .individual {
+    padding: 5px 19px 18px 19px;
+  }
+  .individualStatus div:nth-child(3) {
+    display: none;
+  }
+  .individualStatus div:nth-child(5) {
+    display: none;
+  }
+  .whatsAppUpdate {
+    display: none;
+  }
+  .actions {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 85px;
+    align-items: center;
+  }
+  .actions div:nth-child(1) {
+    width: 135px;
+  }
+  .actions div:nth-child(3) {
+    width: 90px;
+  }
+}

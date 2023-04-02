@@ -1,0 +1,145 @@
+.conatiner {
+  padding: 0 85px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+.icon {
+  height: 24px;
+  width: 24px;
+}
+.icon span {
+  color: #2c2c2c;
+}
+.iconCont {
+  display: flex;
+  align-items: center;
+}
+.greenIcon span {
+  color: #038b00;
+}
+.progressLine,
+.activeProgressLine {
+  height: 2px;
+  width: 60px;
+  background: #d9d9d9;
+  border-radius: 32px;
+  margin: 0 15px;
+}
+.progressLineIncomplete {
+  height: 2px;
+  width: 60%;
+  background: #038b00;
+  border-radius: 32px;
+}
+.progressLineComplete {
+  height: 2px;
+  width: 100%;
+  background: #038b00;
+  border-radius: 32px;
+}
+.completedsvg {
+  transform: translate(13px, -18px);
+}
+.statusName {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  color: #525f75;
+  width: 86px;
+  height: 28px;
+  padding: 10px 0;
+  transform: translateX(-30px);
+  justify-content: center;
+  align-items: flex-start;
+}
+.statusDesc {
+  background: #fffacb;
+  border-radius: 4px;
+  margin: 0 30px;
+  color: #514a0f;
+  border: 1px solid #fcf3a4;
+  padding-bottom: 4px;
+}
+.statusDesc > span {
+  padding: 13px 16px;
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+.statusDesc div {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-top: 1px solid #fcf3a4;
+}
+.statusDesc div span {
+  color: #42526e;
+}
+.arrow {
+  position: absolute;
+  border: solid #fcf3a4;
+  border-width: 0px 1px 1px 0px;
+  background: #fffacb;
+  width: 20px;
+  height: 20px;
+  transform: rotate(-135deg) translate(-50px, -50px);
+}
+.smallDesc {
+  display: none;
+  width: 335px;
+}
+@media screen and (max-width: 768px) {
+  .arrow {
+    display: none;
+  }
+  .conatiner {
+    flex-direction: column;
+    padding: 0 13px;
+    align-items: flex-start;
+    margin-bottom: 0;
+    border-bottom: 1px solid #eeeeee;
+  }
+  .progressLine {
+    transform: rotate(90deg) translateX(13px);
+    width: 25px;
+  }
+  .statusName {
+    width: 160px;
+    transform: translate(25px, -27px);
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 17px;
+  }
+  .iconCont {
+    flex-direction: column;
+  }
+  .cont {
+    width: 30px;
+  }
+  .wideDesc {
+    display: none;
+  }
+  .smallDesc {
+    display: block;
+    transform: translateY(-13px);
+  }
+  .activeProgressLine {
+    height: 2px;
+    width: 60px;
+    background: #d9d9d9;
+    border-radius: 32px;
+    width: 40%;
+    position: absolute;
+    transform: rotate(90deg) translateX(106px);
+  }
+}
