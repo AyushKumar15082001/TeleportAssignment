@@ -47,7 +47,7 @@ export default function Home() {
           </div>
           <div className={styles.submitted}>
             <div className={styles.application}>
-              Submitted applications (5)
+              Submitted applications ({data.length})
             </div>
             {data.map((item, index) => {
               return <List data={item} appearance={appearance[index]} key={index}/>
